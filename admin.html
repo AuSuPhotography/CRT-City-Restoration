@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/crt-logo-122x122.png" type="image/x-icon">
+    <title>Admin Panel</title>
+<style>
+    html, body
+    {
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+    *
+    {
+        box-sizing: border-box;
+        font-family: 'Montserrat' , sans-serif;
+        scroll-behavior: smooth;
+    }
+    .adminbox
+    {
+        width: 320px;
+        height: 420px;
+        background: rgba(0, 0, 0, 0.685);
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+    h1
+    {
+        margin: 0px;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .adminbox p
+    {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+    .adminbox input
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .adminbox input[type="number"]
+    {
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: white;
+        font-size: 16px;
+    }
+    .adminbox input[type="number"]:hover, input[type="tel"]:hover
+    {
+        font-size: 10px;
+    }
+    .adminbox input[type="submit"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #ffc20c;
+        color: black;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .adminbox input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #ffc20cab;
+        color: rgb(0, 0, 0);
+    }
+</style>
+</head>
+<body>
+    <div class="adminbox">
+        <form method="POST" action="process1.php">
+            <p>Resolved cases</p>
+            <input type="number" id="solved" name="solved" placeholder="Enter here...." required>
+            <p>Active Cases</p>
+            <input type="number" id="active" name="active" placeholder="Enter here...." required>
+            <p>Pending Cases</p>
+            <input type="number" id="pending" name="pending" placeholder="Enter here...." required>
+            <br><br>
+            <input type="submit" name="" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
